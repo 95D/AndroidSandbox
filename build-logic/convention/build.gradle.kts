@@ -75,6 +75,10 @@ gradlePlugin {
             id = "androidsandbox.android.test"
             implementationClass = "AndroidTestConventionPlugin"
         }
+        register("androidHilt") {
+            id = "androidsandbox.android.hilt"
+            implementationClass = "AndroidHiltConventionPlugin"
+        }
         register("androidRoom") {
             id = "androidsandbox.android.room"
             implementationClass = "AndroidRoomConventionPlugin"
