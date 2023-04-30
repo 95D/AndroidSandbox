@@ -15,7 +15,7 @@
  */
 
 import com.android.build.api.variant.ApplicationAndroidComponentsExtension
-import com.example.androidsandbox.configureJacoco
+import com.headwind.androidsandbox.configureJacoco
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.getByType

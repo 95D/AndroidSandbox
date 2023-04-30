@@ -16,10 +16,10 @@
 
 import com.android.build.api.variant.LibraryAndroidComponentsExtension
 import com.android.build.gradle.LibraryExtension
-import com.example.androidsandbox.configureFlavors
-import com.example.androidsandbox.configureKotlinAndroid
-import com.example.androidsandbox.configurePrintApksTask
-import com.example.androidsandbox.disableUnnecessaryAndroidTests
+import com.headwind.androidsandbox.configureFlavors
+import com.headwind.androidsandbox.configureKotlinAndroid
+import com.headwind.androidsandbox.configurePrintApksTask
+import com.headwind.androidsandbox.disableUnnecessaryAndroidTests
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.artifacts.VersionCatalogsExtension
