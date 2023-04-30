@@ -7,7 +7,7 @@ plugins {
     id("androidsandbox.android.application.compose")
     id("androidsandbox.android.application.flavors")
     id("androidsandbox.android.application.jacoco")
-    id("jacoco")
+    id("androidsandbox.android.hilt")
 }
 
 android {
