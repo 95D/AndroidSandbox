@@ -14,7 +14,7 @@
  *   limitations under the License.
  */
 
-package com.example.androidsandbox
+package com.headwind.androidsandbox
 
 /**
  * This is shared between :app and :benchmarks module to provide configurations type safety.

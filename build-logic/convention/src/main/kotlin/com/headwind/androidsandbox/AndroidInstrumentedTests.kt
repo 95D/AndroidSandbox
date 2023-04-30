@@ -14,7 +14,7 @@
  *   limitations under the License.
  */
 
-package com.example.androidsandbox
+package com.headwind.androidsandbox
 
 import com.android.build.api.variant.LibraryAndroidComponentsExtension
 import org.gradle.api.Project

@@ -16,4 +16,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "AndroidSandbox"
-include(":app")
+include(":sample_app_profile_list")

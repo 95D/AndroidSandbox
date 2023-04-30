@@ -16,8 +16,8 @@
 
 import com.android.build.api.dsl.ApplicationExtension
 import com.android.build.api.variant.ApplicationAndroidComponentsExtension
-import com.example.androidsandbox.configureKotlinAndroid
-import com.example.androidsandbox.configurePrintApksTask
+import com.headwind.androidsandbox.configureKotlinAndroid
+import com.headwind.androidsandbox.configurePrintApksTask
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
