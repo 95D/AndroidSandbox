@@ -1,4 +1,4 @@
-import  com.example.androidsandbox.AppBuildType
+import com.headwind.androidsandbox.AppBuildType
 
 plugins {
     id("androidsandbox.android.application")
