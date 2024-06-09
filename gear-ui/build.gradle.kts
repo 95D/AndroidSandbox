@@ -1,29 +1,20 @@
 import com.headwind.androidsandbox.AppBuildType
 
 plugins {
-    id("androidsandbox.android.application")
-    id("androidsandbox.android.application.compose")
-    id("androidsandbox.android.application.flavors")
-    id("androidsandbox.android.application.jacoco")
+    id("androidsandbox.android.library")
+    id("androidsandbox.android.library.compose")
+    id("androidsandbox.android.library.jacoco")
     id("androidsandbox.android.hilt")
 }
 
 android {
     defaultConfig {
-        applicationId = "com.example.androidsandbox"
-        versionCode = 1
-        versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
-        debug {
-            applicationIdSuffix = AppBuildType.DEBUG.applicationIdSuffix
-        }
         val release by getting {
             isMinifyEnabled = true
-            applicationIdSuffix = AppBuildType.RELEASE.applicationIdSuffix
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -43,7 +34,6 @@ android {
             // Only use benchmark proguard rules
             proguardFiles("benchmark-rules.pro")
             isMinifyEnabled = true
-            applicationIdSuffix = AppBuildType.BENCHMARK.applicationIdSuffix
         }
     }
     namespace = "com.example.androidsandbox"
