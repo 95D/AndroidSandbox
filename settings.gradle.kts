@@ -17,3 +17,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "AndroidSandbox"
 include(":sample_app_profile_list")
+include(":gear-ui")
