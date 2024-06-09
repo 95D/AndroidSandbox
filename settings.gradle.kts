@@ -15,6 +15,8 @@ dependencyResolutionManagement {
     }
 }
 
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 rootProject.name = "AndroidSandbox"
 include(":sample_app_profile_list")
 include(":gear-ui")
