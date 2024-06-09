@@ -37,7 +37,15 @@ private fun cornerRoundings(
         toothRounding,
         toothRounding,
         CornerRounding.Unrounded,
-    ).take(numVertices)
+    ) * numVertices
+
+private operator fun List<CornerRounding>.times(another: Int): List<CornerRounding> {
+    var result = emptyList<CornerRounding>()
+    for (i in 0 until another) {
+        result = result + this
+    }
+    return result
+}
 
 private fun getGearVertices(
     numVertices: Int,
