@@ -1,6 +1,7 @@
 package com.example.gear.ui.shape
 
 import android.graphics.PointF
+import androidx.annotation.FloatRange
 import androidx.core.graphics.times
 import androidx.graphics.shapes.CornerRounding
 import androidx.graphics.shapes.RoundedPolygon
@@ -9,8 +10,8 @@ import kotlin.math.sin
 
 fun getGearShape(
     numTeeth: Int,
-    teethRadius: Float,
-    wheelRadius: Float,
+    @FloatRange(from = 0.001) teethRadius: Float,
+    @FloatRange(from = 0.001) wheelRadius: Float,
     centerX: Float,
     centerY: Float,
     toothRounding: CornerRounding = CornerRounding.Unrounded
