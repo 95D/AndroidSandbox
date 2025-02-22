@@ -1,11 +1,26 @@
 package com.example.gear.ui.shape
 
+import android.graphics.Path
 import android.graphics.PointF
+import android.util.Log
+import androidx.annotation.FloatRange
 import androidx.core.graphics.times
 import androidx.graphics.shapes.CornerRounding
 import androidx.graphics.shapes.RoundedPolygon
+import androidx.graphics.shapes.toPath
 import kotlin.math.cos
 import kotlin.math.sin
+
+fun getGearShapePath(
+    numTeeth: Int,
+    @FloatRange(from = 0.001) teethRadius: Float,
+    @FloatRange(from = 0.001) wheelRadius: Float,
+    centerX: Float,
+    centerY: Float,
+    toothRounding: CornerRounding = CornerRounding.Unrounded
+): Path = getGearShape(
+    numTeeth, teethRadius, wheelRadius, centerX, centerY, toothRounding
+).toPath()
 
 fun getGearShape(
     numTeeth: Int,
@@ -73,6 +88,7 @@ private fun getGearVertices(
             result[arrayIndex++] = vertex.y
         }
     }
+    Log.d("GearShape", "Vertices: ${result.joinToString { it.toString() }}")
     return result
 }
 
